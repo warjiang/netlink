@@ -239,7 +239,7 @@ func checkMessage(m Message) error {
 
 	switch {
 	// "done" with no data means success.
-	// some developers may need receive some data from kernel after send msg
+	// some developers(such as {warjiang,PengchengZhou}@github.com) may need receive some data from kernel after send msg
 	// case isDone && len(m.Data) == 0:
 	case isDone:
 		return nil
